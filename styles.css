@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+canvas {
+    border: 2px solid #fff;
+    background-color: #000;
+}
+
+.score-container {
+    margin: 20px;
+    font-size: 24px;
+}
+
+.game-controls {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:disabled {
+    background-color: #888;
+    cursor: not-allowed;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover:not(:disabled) {
+    background-color: #666;
+}
